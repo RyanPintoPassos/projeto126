@@ -36,7 +36,7 @@ function modelLoaded() {
 
 function gotPoses() 
 {
-    if(SpeechRecognitionResultList.length > 0)
+    if(results.length > 0)
     {
         console.log(results);
         scoreRightWrist = results[0].pose.keypoints[10].score;
